@@ -456,6 +456,10 @@ table {
 /* End Transitions */
 /* Text Colors */
 /* End Text Colors */
+/* Backgrounds */
+/* End Backgrounds */
+/* Borders */
+/* End Borders */
 /* Containers */
 * {
   box-sizing: border-box; }
@@ -523,7 +527,7 @@ a {
   line-height: 2.2rem;
   color: #8794ba;
   position: relative;
-  transition: 0.3s; }
+  transition: color 0.3s; }
   @media (max-width: 1260px) {
     a {
       transition: none; } }
@@ -540,9 +544,48 @@ a {
     bottom: 0;
     background-color: #fff;
     transform: scaleX(0);
-    transition: 0.3s; }
+    transition: transform 0.3s; }
     @media (max-width: 1260px) {
       a:before {
         transition: none; } }
+
+button {
+  border: 0;
+  padding: 1.4rem;
+  background: transparent;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  text-align: center;
+  min-width: 23.8rem;
+  border-radius: 3rem; }
+
+.btn-primary {
+  color: #fff;
+  background-color: #ef2a82;
+  transition: background-color 0.3s; }
+  @media (max-width: 1260px) {
+    .btn-primary {
+      transition: none; } }
+  .btn-primary:hover {
+    background-color: #d61069; }
+  .btn-primary:active {
+    background-color: #a60c51; }
+
+.btn-secondary {
+  padding: 1.2rem;
+  color: #8794ba;
+  border: 0.2rem solid #465b95;
+  transition: background-color 0.3s, color 0.3s; }
+  @media (max-width: 1260px) {
+    .btn-secondary {
+      transition: none; } }
+  .btn-secondary:hover, .btn-secondary:active {
+    padding: 1.4rem;
+    border: 0;
+    color: #fff; }
+  .btn-secondary:hover {
+    background-color: #465b95; }
+  .btn-secondary:active {
+    background-color: #364672; }
 
 /*# sourceMappingURL=style.css.map */

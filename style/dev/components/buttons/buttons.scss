@@ -1,0 +1,45 @@
+button {
+  border: 0;
+  padding: 1.4rem;
+  background: transparent;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  text-align: center;
+  min-width: 23.8rem;
+  border-radius: 3rem;
+}
+
+.btn-primary {
+  color: $text-color-btn-primary;
+  background-color: $bg-btn-primary;
+  @include transition(background-color .3s);
+
+  &:hover {
+    background-color: $bg-btn-primary-hover;
+  }
+
+  &:active {
+    background-color: $bg-btn-primary-active;
+  }
+}
+
+.btn-secondary {
+  padding: 1.2rem;
+  color: $text-color-light;
+  border: .2rem solid $border-btn-secondary;
+  @include transition(background-color .3s, color .3s);
+
+  &:hover, &:active {
+    padding: 1.4rem;
+    border: 0;
+    color: $text-color-btn-secondary-active;
+  }
+
+  &:hover {
+    background-color: $bg-btn-secondary-hover;
+  }
+
+  &:active {
+    background-color: $bg-btn-secondary-active;
+  }
+}

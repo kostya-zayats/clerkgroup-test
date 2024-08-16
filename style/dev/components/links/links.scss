@@ -3,7 +3,7 @@ a {
   line-height: 2.2rem;
   color: $text-color-light;
   position: relative;
-  @include transition(.3s);
+  @include transition(color .3s);
 
   &:hover {
     color: $text-color-link-hover;
@@ -22,6 +22,6 @@ a {
     bottom: 0;
     background-color: $text-color-link-hover;
     transform: scaleX(0);
-    @include transition(.3s);
+    @include transition(transform .3s);
   }
 }
