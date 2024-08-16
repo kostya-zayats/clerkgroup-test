@@ -1,0 +1,27 @@
+a {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: $text-color-light;
+  position: relative;
+  @include transition(.3s);
+
+  &:hover {
+    color: $text-color-link-hover;
+
+    &:before {
+      transform: scale(1);
+    }
+  }
+
+  &:before {
+    content: '';
+    width: 100%;
+    height: .1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: $text-color-link-hover;
+    transform: scaleX(0);
+    @include transition(.3s);
+  }
+}

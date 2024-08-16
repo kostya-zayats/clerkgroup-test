@@ -450,6 +450,10 @@ table {
 #yui3-css-stamp.cssnormalize {
   display: none; }
 
+/* Media Queries */
+/* End Media Queries */
+/* Transitions */
+/* End Transitions */
 /* Text Colors */
 /* End Text Colors */
 /* Containers */
@@ -513,5 +517,32 @@ p.par--small {
   line-height: 2.2rem;
   margin-bottom: 2.2rem;
   color: #8794ba; }
+
+a {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #8794ba;
+  position: relative;
+  transition: 0.3s; }
+  @media (max-width: 1260px) {
+    a {
+      transition: none; } }
+  a:hover {
+    color: #fff; }
+    a:hover:before {
+      transform: scale(1); }
+  a:before {
+    content: '';
+    width: 100%;
+    height: .1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: 0.3s; }
+    @media (max-width: 1260px) {
+      a:before {
+        transition: none; } }
 
 /*# sourceMappingURL=style.css.map */
