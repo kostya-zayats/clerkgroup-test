@@ -450,6 +450,8 @@ table {
 #yui3-css-stamp.cssnormalize {
   display: none; }
 
+/* Text Colors */
+/* End Text Colors */
 /* Containers */
 * {
   box-sizing: border-box; }
@@ -460,6 +462,7 @@ html, body {
   font-family: 'Roboto', sans-serif;
   font-size: 10px;
   font-weight: 400;
+  color: #172755;
   overflow: hidden; }
 
 .footer-fix {
@@ -498,5 +501,17 @@ h4 {
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 2.2rem; }
+
+p {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #8794ba; }
+
+p.par--small {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  margin-bottom: 2.2rem;
+  color: #8794ba; }
 
 /*# sourceMappingURL=style.css.map */
