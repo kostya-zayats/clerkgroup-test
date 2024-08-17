@@ -575,17 +575,16 @@ button {
   padding: 1.2rem;
   color: #8794ba;
   border: 0.2rem solid #465b95;
-  transition: background-color 0.3s, color 0.3s; }
+  transition: background-color 0.3s, color 0.3s, border 0.3s; }
   @media (max-width: 1260px) {
     .btn-secondary {
       transition: none; } }
   .btn-secondary:hover, .btn-secondary:active {
-    padding: 1.4rem;
-    border: 0;
     color: #fff; }
   .btn-secondary:hover {
     background-color: #465b95; }
   .btn-secondary:active {
+    border: 0.2rem solid #364672;
     background-color: #364672; }
 
 /*# sourceMappingURL=style.css.map */

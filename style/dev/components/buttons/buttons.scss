@@ -27,11 +27,9 @@ button {
   padding: 1.2rem;
   color: $text-color-light;
   border: .2rem solid $border-btn-secondary;
-  @include transition(background-color .3s, color .3s);
+  @include transition(background-color .3s, color .3s, border .3s);
 
   &:hover, &:active {
-    padding: 1.4rem;
-    border: 0;
     color: $text-color-btn-secondary-active;
   }
 
@@ -40,6 +38,7 @@ button {
   }
 
   &:active {
+    border: .2rem solid $bg-btn-secondary-active;
     background-color: $bg-btn-secondary-active;
   }
 }
