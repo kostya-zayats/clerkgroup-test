@@ -460,6 +460,8 @@ table {
 /* End Backgrounds */
 /* Borders */
 /* End Borders */
+/* Shadows */
+/* End Shadows */
 /* Containers */
 * {
   box-sizing: border-box; }
@@ -589,13 +591,12 @@ button {
 
 .input-wrap {
   display: block; }
-
-.input-label {
-  display: block;
-  margin-bottom: 1.4rem;
-  font-weight: 700;
-  font-size: 1.6rem;
-  line-height: 2.2rem; }
+  .input-wrap label {
+    display: block;
+    margin-bottom: 1.4rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.2rem; }
 
 input[type='text'] {
   width: 100%;
@@ -618,5 +619,80 @@ input[type='text'] {
   input[type='text']:hover, input[type='text']:focus {
     border: 0.2rem solid #172755;
     background-color: transparent; }
+
+.custom-select {
+  position: relative;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #172755; }
+
+.custom-select select {
+  display: none; }
+
+.select-selected {
+  position: relative;
+  background-color: #eeeef6;
+  padding: 1.2rem 1.8rem;
+  border: 0.2rem solid #eeeef6;
+  cursor: pointer;
+  user-select: none;
+  border-radius: .8rem;
+  transition: border 0.3s, background-color 0.3s; }
+  @media (max-width: 1260px) {
+    .select-selected {
+      transition: none; } }
+  .select-selected:after {
+    content: "";
+    position: absolute;
+    top: 1.9rem;
+    right: 2rem;
+    width: 1.4rem;
+    height: .8rem;
+    background: url("../../img/ico/ico-select-arrow.svg") center center no-repeat;
+    background-size: contain;
+    transform: rotate(180deg);
+    transition: .3s; }
+  .select-selected:hover {
+    border: 0.2rem solid #172755;
+    background-color: transparent; }
+  .select-selected.select-arrow-active {
+    border: 0.2rem solid #172755;
+    background-color: transparent; }
+    .select-selected.select-arrow-active:after {
+      transform: rotate(0); }
+  .select-selected.item-selected {
+    border: 0.2rem solid #172755;
+    background-color: transparent; }
+
+.select-items {
+  padding: .8rem 0;
+  border: 0.2rem solid #eeeef6;
+  border-radius: .8rem;
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  transform: translate(0, 0.4rem);
+  box-shadow: 0 1.8rem 5rem -1.5rem rgba(25, 42, 89, 0.2); }
+  .select-items div {
+    padding: 1.4rem 1.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; }
+    @media (max-width: 1260px) {
+      .select-items div {
+        transition: none; } }
+
+.select-hide {
+  display: none; }
+
+.select-items div:hover {
+  background-color: #eeeef6; }
+.select-items .same-as-selected {
+  color: #fff;
+  background-color: #172755; }
+  .select-items .same-as-selected:hover {
+    background-color: #172755; }
 
 /*# sourceMappingURL=style.css.map */

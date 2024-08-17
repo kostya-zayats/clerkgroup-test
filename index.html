@@ -46,10 +46,24 @@
         <button class="btn-secondary">Secondary</button>
       </div>
       <div>
-        <label class="input-wrap">
-          <span class="input-label">Name *</span>
-          <input type="text" placeholder="Full Name *">
-        </label>
+        <div class="input-wrap">
+          <label class="input-label" for="name">Name *</label>
+          <input id="name" name="name" type="text" placeholder="Full Name *">
+        </div>
+
+        <div class="input-wrap">
+          <label class="input-label" for="departement">Departement *</label>
+          <div class="custom-select">
+            <select id="departement" name="departement" >
+              <option value="0">Please Select</option>
+              <option value="1">Lorem ipsum 1</option>
+              <option value="2">Lorem ipsum 2</option>
+              <option value="3">Lorem ipsum 3</option>
+              <option value="4">Lorem ipsum 4</option>
+              <option value="5">Lorem ipsum 5</option>
+            </select>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -58,5 +72,6 @@
 
 </div>
 
+<script src="script/lib/custom-select.js"></script>
 </body>
 </html>
