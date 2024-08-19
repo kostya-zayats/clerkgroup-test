@@ -758,6 +758,18 @@ input[type='text'] {
 
 /* End Components */
 /* Containers */
+.skew-container {
+  background-color: #f8f9ff;
+  border: 1.7rem solid #ef2a82;
+  border-left: 0;
+  border-right: 0;
+  transform-origin: top left;
+  transform: skewY(-7.5deg); }
+
+.skew-content {
+  transform-origin: top left;
+  transform: skewY(7.5deg); }
+
 header {
   width: 100%;
   position: sticky;
@@ -810,7 +822,8 @@ nav a {
     margin-top: 2.5rem; }
 
 .intro-pic {
-  position: relative; }
+  position: relative;
+  z-index: 10; }
   .intro-pic img {
     display: block; }
 
