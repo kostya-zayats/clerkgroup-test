@@ -704,6 +704,7 @@ input[type='text'] {
 .card {
   text-align: center;
   border-radius: 3rem;
+  width: 100%;
   max-width: 33.8rem; }
 
 .card-header {
@@ -723,6 +724,7 @@ input[type='text'] {
     width: 100%; }
 
 .card-main {
+  background-color: #fff;
   padding: 5rem 5rem 7rem;
   box-shadow: 0 1.8rem 5rem -1.5rem rgba(25, 42, 89, 0.2); }
 
@@ -891,6 +893,29 @@ nav a {
   margin-top: -.8rem;
   padding-top: 5.3rem;
   background: url("../../img/bg/outro-bg.svg") right top -22rem no-repeat; }
+
+.pricing {
+  padding-bottom: 8rem; }
+
+.pricing-desc {
+  text-align: center; }
+  .pricing-desc h3 {
+    color: #fff;
+    margin-bottom: 2rem; }
+  .pricing-desc p {
+    margin: 0 auto 2.5rem;
+    max-width: 65rem; }
+
+.pricing-content {
+  max-width: 122rem;
+  width: 100%;
+  padding: 0 2rem;
+  margin: 0 auto; }
+
+.pricing-plans {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-between; }
 
 /* End Containers */
 
