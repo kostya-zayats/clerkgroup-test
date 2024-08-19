@@ -478,6 +478,7 @@ html, body {
   overflow: hidden; }
 
 .footer-fix {
+  background-color: #172755;
   width: 100%;
   height: 100%;
   display: flex;
@@ -487,12 +488,6 @@ html, body {
 .footer-fix-container {
   flex-grow: 1; }
 
-.content-width {
-  max-width: 122rem;
-  width: 100%;
-  padding: 0 2rem;
-  margin: 0 auto; }
-
 /* End Containers */
 /* Outlines Reset */
 a, input, button {
@@ -500,24 +495,6 @@ a, input, button {
   text-decoration: none; }
 
 /* End Outlines Reset */
-.angle-test {
-  width: 160rem;
-  height: 100rem;
-  position: relative; }
-  .angle-test .angle {
-    border-top: 1.7rem solid #ef2a82;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: yellow;
-    width: 100%;
-    height: 100%;
-    transform: skewY(-7.5deg); }
-  .angle-test img {
-    position: absolute;
-    top: 0;
-    left: 0; }
-
 /* Components */
 h1 {
   font-weight: 700;
@@ -803,7 +780,7 @@ nav a {
 
 .intro {
   padding: 11rem 0 6.4rem;
-  background: #172755 url("../../img/bg/intro-bg.svg") left top 11% no-repeat;
+  background: url("../../img/bg/intro-bg.svg") left top 11% no-repeat;
   background-size: 100%;
   overflow: hidden; }
 
