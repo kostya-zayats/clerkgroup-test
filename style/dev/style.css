@@ -656,7 +656,7 @@ input[type='text'] {
     height: .8rem;
     background: url("../../img/ico/ico-select-arrow.svg") center center no-repeat;
     background-size: contain;
-    transform: rotate(180deg);
+    transform: rotate(0);
     transition: .3s; }
   .select-selected:hover {
     border: 0.2rem solid #172755;
@@ -665,7 +665,7 @@ input[type='text'] {
     border: 0.2rem solid #172755;
     background-color: transparent; }
     .select-selected.select-arrow-active:after {
-      transform: rotate(0); }
+      transform: rotate(180deg); }
   .select-selected.item-selected {
     border: 0.2rem solid #172755;
     background-color: transparent; }
@@ -828,7 +828,7 @@ nav a {
     margin-bottom: 3rem; }
 
 .features-unit-wrap {
-  margin: 8rem -1rem;
+  margin: 8rem -1rem 0;
   display: flex;
   align-items: flex-start; }
 
@@ -848,6 +848,44 @@ nav a {
     margin-bottom: 1rem; }
   .features-unit p {
     margin-bottom: 0; }
+
+.registration {
+  padding-bottom: 11.3rem; }
+
+.registration-content {
+  max-width: 122rem;
+  width: 100%;
+  padding: 0 2rem;
+  margin: 0 auto; }
+
+.registration-form-wrap {
+  display: flex;
+  border-radius: 3rem;
+  box-shadow: 0 1.8rem 5rem -1.5rem rgba(25, 42, 89, 0.2);
+  overflow: hidden; }
+
+.registration-stat {
+  background-color: #172755;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .registration-stat img {
+    display: block;
+    width: 100%; }
+
+.registration-form {
+  padding: 6rem 8rem;
+  background-color: #fff;
+  width: 50%; }
+  .registration-form h3 {
+    text-align: center;
+    margin-bottom: 4rem; }
+  .registration-form .input-wrap {
+    margin-bottom: 2.4rem; }
+    .registration-form .input-wrap:last-child {
+      margin: 4rem 0 0;
+      text-align: center; }
 
 /* End Containers */
 
