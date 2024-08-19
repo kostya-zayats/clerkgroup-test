@@ -1,6 +1,7 @@
 /* Text Colors */
 $text-color-main: #172755;
 $text-color-light: #8794ba;
+$text-color-white: #fff;
 $text-color-link-hover: #fff;
 $text-color-btn-primary: #fff;
 $text-color-btn-secondary-active: #fff;
@@ -16,14 +17,17 @@ $bg-btn-secondary-active: #364672;
 $bg-input: #eeeef6;
 $bg-select-items: #fff;
 $bg-selected-item: #172755;
+$bg-card-secondary: #172755;
 /* End Backgrounds */
 
 /* Borders */
 $border-btn-secondary: #465b95;
 $border-input-active: #172755;
 $border-select-items: #eeeef6;
+$border-card-main-devider: #eeeef6;
+$border-card-secondary: #465b95;
 /* End Borders */
 
 /* Shadows */
-$shadow-select-items: 0 1.8rem 5rem -1.5rem rgba(25, 42, 89, 0.2);
+$shadow-main: 0 1.8rem 5rem -1.5rem rgba(25, 42, 89, 0.2);
 /* End Shadows */
