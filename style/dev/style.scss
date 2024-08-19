@@ -7,6 +7,7 @@
 
 @import "global";
 
+/* Components */
 @import "components/headers/headers";
 @import "components/paragraphs/paragraphs";
 @import "components/links/links";
@@ -14,3 +15,8 @@
 @import "components/inputs/inputs";
 @import "components/inputs/select";
 @import "components/cards/cards";
+/* End Components */
+
+/* Containers */
+@import "containers/header/header";
+/* End Containers */
