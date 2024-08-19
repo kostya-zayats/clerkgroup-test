@@ -1,0 +1,42 @@
+.intro {
+  padding: 11rem 0 6.4rem;
+  background: $bg-main url("../../img/bg/intro-bg.svg") left top 11% no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+}
+
+.intro-content {
+  @include mainContent;
+  display: flex;
+}
+
+.intro-desc {
+  max-width: 70rem;
+  padding: 8rem 15rem 0 0;
+  flex-shrink: 0;
+
+  .btn-primary {
+    margin-top: 2.5rem;
+  }
+}
+
+.intro-pic {
+  position: relative;
+
+  img {
+    display: block;
+  }
+}
+
+.intro-pic-main, .intro-pic-secondary {
+  border-radius: 3rem;
+  box-shadow: $shadow-main;
+  overflow: hidden;
+}
+
+.intro-pic-secondary {
+  position: absolute;
+  top: 50%;
+  left: -6.9rem;
+  transform: translate(0, -50%);
+}

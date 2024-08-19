@@ -17,3 +17,12 @@
   }
 }
 /* End Transitions */
+
+/* Main Content styles */
+@mixin mainContent {
+  max-width: 122rem;
+  width: 100%;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+/* End Main Content styles */
