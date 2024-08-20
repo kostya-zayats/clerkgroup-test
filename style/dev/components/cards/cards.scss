@@ -3,11 +3,19 @@
   border-radius: 3rem;
   width: 100%;
   max-width: 33.8rem;
+
+  @include mobile900 {
+    max-width: 24rem;
+  }
 }
 
 .card-header {
   padding-bottom: 4rem;
   border-bottom: .1rem solid $border-card-main-devider;
+
+  @include mobile900 {
+    padding-bottom: 3rem;
+  }
 
   h3 {
     margin-bottom: 1rem;
@@ -21,10 +29,15 @@
 .card-card-desc {
   padding-top: 4rem;
 
+  @include mobile900 {
+    padding-top: 3rem;
+  }
+
   .par--small {
     margin-bottom: 4rem;
 
     @include mobile900 {
+      margin-bottom: 3rem;
       font-size: 1.4rem;
       line-height: 2rem;
     }
@@ -40,12 +53,20 @@
   background-color: $bg-card-main;
   padding: 5rem 5rem 7rem;
   box-shadow: $shadow-main;
+
+  @include mobile900 {
+    padding: 4rem 2rem 5rem;
+  }
 }
 
 .card-secondary {
   background-color: $bg-card-secondary;
   padding: 4.8rem 4.8rem 6.8rem;
   border: .2rem solid $border-card-secondary;
+
+  @include mobile900 {
+    padding: 3.84rem 1.8rem 4.8rem;
+  }
 
   h2, h3 {
     color: $text-color-white;
