@@ -1097,12 +1097,21 @@ nav {
 
 .pricing {
   padding-bottom: 8rem; }
+  @media (max-width: 900px) {
+    .pricing {
+      padding-bottom: 4rem; } }
 
 .pricing-desc {
   text-align: center; }
+  @media (max-width: 900px) {
+    .pricing-desc {
+      text-align: left; } }
   .pricing-desc h3 {
     color: #fff;
     margin-bottom: 2rem; }
+    @media (max-width: 900px) {
+      .pricing-desc h3 {
+        margin-bottom: 2.9rem; } }
   .pricing-desc p {
     margin: 0 auto 2.5rem;
     max-width: 65rem; }
@@ -1114,9 +1123,17 @@ nav {
   margin: 0 auto; }
 
 .pricing-plans {
-  margin-top: 6rem;
+  margin: 6rem -2rem 0;
   display: flex;
   justify-content: space-between; }
+  @media (max-width: 900px) {
+    .pricing-plans {
+      margin-top: 3rem; } }
+  .pricing-plans .card {
+    margin: 0 4rem; }
+    @media (max-width: 900px) {
+      .pricing-plans .card {
+        margin: 0 1rem; } }
 
 footer {
   padding: 0 2rem; }

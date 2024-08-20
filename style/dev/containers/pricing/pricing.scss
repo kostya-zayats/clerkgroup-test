@@ -1,13 +1,25 @@
 .pricing {
   padding-bottom: 8rem;
+
+  @include mobile900 {
+    padding-bottom: 4rem;
+  }
 }
 
 .pricing-desc {
   text-align: center;
 
+  @include mobile900 {
+    text-align: left;
+  }
+
   h3 {
     color: $text-color-white;
     margin-bottom: 2rem;
+
+    @include mobile900 {
+      margin-bottom: 2.9rem;
+    }
   }
 
   p {
@@ -20,7 +32,19 @@
 }
 
 .pricing-plans {
-  margin-top: 6rem;
+  margin: 6rem -2rem 0;
   display: flex;
   justify-content: space-between;
+
+  @include mobile900 {
+    margin-top: 3rem;
+  }
+
+  .card {
+    margin: 0 4rem;
+
+    @include mobile900 {
+      margin: 0 1rem;
+    }
+  }
 }
