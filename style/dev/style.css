@@ -573,6 +573,9 @@ a {
     @media (max-width: 1260px) {
       a:before {
         transition: none; } }
+    @media (max-width: 900px) {
+      a:before {
+        display: none; } }
 
 button {
   border: 0;
@@ -783,10 +786,20 @@ header {
   background-color: #172755;
   padding: 1rem 0;
   z-index: 1000; }
+  @media (max-width: 900px) {
+    header {
+      padding: 1.6rem 0; } }
+  header nav {
+    margin: 0 auto; }
   header .logo {
     display: block;
     width: 18.4rem;
-    height: 4rem; }
+    height: 4rem;
+    flex-shrink: 0; }
+    @media (max-width: 900px) {
+      header .logo {
+        width: 13.8rem;
+        height: 3rem; } }
     header .logo img {
       width: 100%;
       height: 100%;
@@ -800,11 +813,88 @@ header {
   padding: 0 2rem;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   align-items: center; }
 
-nav a {
-  margin: 0 1.8rem; }
+.header-actions {
+  flex-grow: 1;
+  display: flex;
+  align-items: center; }
+  @media (max-width: 900px) {
+    .header-actions {
+      display: none;
+      padding: 4rem 20px 5rem;
+      flex-direction: column;
+      background-color: #172755;
+      position: fixed;
+      top: 6.2rem;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 6.2rem);
+      overflow: auto; }
+      .header-actions.active {
+        display: flex; } }
+
+.mob-menu-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  display: none;
+  align-items: center;
+  justify-content: center; }
+  @media (max-width: 900px) {
+    .mob-menu-btn {
+      display: flex; } }
+  .mob-menu-btn:before, .mob-menu-btn:after {
+    display: none; }
+  .mob-menu-btn.active .mob-menu-btn-ico div:nth-child(1) {
+    top: .2rem;
+    left: .5rem;
+    transform: rotate(45deg); }
+  .mob-menu-btn.active .mob-menu-btn-ico div:nth-child(2) {
+    transform: scaleX(0); }
+  .mob-menu-btn.active .mob-menu-btn-ico div:nth-child(3) {
+    top: 1.9rem;
+    left: .3rem;
+    transform: rotate(-45deg); }
+
+.mob-menu-btn-ico {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: relative; }
+  .mob-menu-btn-ico div {
+    background-color: #8794ba;
+    width: 2.4rem;
+    height: .3rem;
+    position: absolute;
+    left: 0;
+    transition: transform .3s, top .3s, left .3s; }
+    .mob-menu-btn-ico div:nth-child(1) {
+      top: .3rem;
+      transform-origin: top left; }
+    .mob-menu-btn-ico div:nth-child(2) {
+      top: 1.1rem; }
+    .mob-menu-btn-ico div:nth-child(3) {
+      top: 1.9rem;
+      transform-origin: top left; }
+
+nav {
+  display: flex; }
+  @media (max-width: 900px) {
+    nav {
+      flex-direction: column;
+      flex-grow: 1;
+      width: 100%; } }
+  nav a {
+    display: block;
+    margin: 0 1.8rem; }
+    @media (max-width: 900px) {
+      nav a {
+        font-weight: 700;
+        font-size: 2.8rem;
+        line-height: 3.4rem;
+        margin: 0 0 3rem; } }
 
 .intro {
   padding: 11rem 0 6.4rem;
@@ -832,6 +922,7 @@ nav a {
   flex-shrink: 0; }
   @media (max-width: 900px) {
     .intro-desc {
+      max-width: 100%;
       padding: 2.5rem 0 0; } }
   .intro-desc .btn-primary {
     margin-top: 2.5rem; }

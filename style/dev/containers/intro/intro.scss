@@ -25,6 +25,7 @@
   flex-shrink: 0;
 
   @include mobile900 {
+    max-width: 100%;
     padding: 2.5rem 0 0;
   }
 

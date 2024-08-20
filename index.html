@@ -5,6 +5,8 @@
   <title>Clerkgroup</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style/dev/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -16,14 +18,33 @@
         <img src="img/logo.svg" alt="analytics logo">
       </a>
 
-      <nav>
+      <div class="header-actions">
+        <nav>
+          <a href="#">Products</a>
+          <a href="#">Features</a>
+          <a href="#">Registration</a>
+          <a href="#">Pricing</a>
+        </nav>
+
+        <button class="btn-secondary">Sign Up</button>
+      </div>
+
+      <a href="#" class="mob-menu-btn">
+        <div class="mob-menu-btn-ico">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </a>
+
+      <!--<nav>
         <a href="#">Products</a>
         <a href="#">Features</a>
         <a href="#">Registration</a>
         <a href="#">Pricing</a>
       </nav>
 
-      <button class="btn-secondary">Sign Up</button>
+      <button class="btn-secondary">Sign Up</button>-->
     </div>
   </header>
 
@@ -211,5 +232,6 @@
 </div>
 
 <script src="script/lib/custom-select.js"></script>
+<script src="script/dev/menu.js"></script>
 </body>
 </html>

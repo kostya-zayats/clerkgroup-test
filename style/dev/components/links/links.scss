@@ -23,5 +23,9 @@ a {
     background-color: $text-color-link-hover;
     transform: scaleX(0);
     @include transition(transform .3s);
+
+    @include mobile900 {
+      display: none;
+    }
   }
 }
