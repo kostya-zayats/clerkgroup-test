@@ -20,6 +20,10 @@
   align-items: center;
   justify-content: center;
 
+  @include mobile900 {
+    display: none;
+  }
+
   img {
     display: block;
     width: 100%;
@@ -29,6 +33,11 @@
   padding: 6rem 8rem;
   background-color: $bg-registration-form;
   width: 50%;
+
+  @include mobile900 {
+    width: 100%;
+    padding: 3rem 3rem 5rem;
+  }
 
   h3 {
     text-align: center;

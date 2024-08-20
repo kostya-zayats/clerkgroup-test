@@ -7,6 +7,10 @@ button {
   text-align: center;
   min-width: 23.8rem;
   border-radius: 3rem;
+
+  @include mobile900 {
+    min-width: 100%;
+  }
 }
 
 .btn-primary {

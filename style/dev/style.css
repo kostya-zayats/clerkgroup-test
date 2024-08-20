@@ -582,6 +582,9 @@ button {
   text-align: center;
   min-width: 23.8rem;
   border-radius: 3rem; }
+  @media (max-width: 900px) {
+    button {
+      min-width: 100%; } }
 
 .btn-primary {
   color: #fff;
@@ -894,6 +897,9 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media (max-width: 900px) {
+    .registration-stat {
+      display: none; } }
   .registration-stat img {
     display: block;
     width: 100%; }
@@ -902,6 +908,10 @@ nav a {
   padding: 6rem 8rem;
   background-color: #fff;
   width: 50%; }
+  @media (max-width: 900px) {
+    .registration-form {
+      width: 100%;
+      padding: 3rem 3rem 5rem; } }
   .registration-form h3 {
     text-align: center;
     margin-bottom: 4rem; }
