@@ -3,6 +3,11 @@ p {
   line-height: 2.5rem;
   margin-bottom: 2.5rem;
   color: $text-color-light;
+
+  @include mobile900 {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
 }
 
 p.par--small {

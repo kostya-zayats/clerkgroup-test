@@ -23,6 +23,11 @@
 
   .par--small {
     margin-bottom: 4rem;
+
+    @include mobile900 {
+      font-size: 1.4rem;
+      line-height: 2rem;
+    }
   }
 
   button {
