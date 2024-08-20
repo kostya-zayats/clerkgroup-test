@@ -1073,6 +1073,11 @@ nav {
   margin-top: -.8rem;
   padding-top: 5.3rem;
   background: url("../../img/bg/outro-bg.svg") right top -22rem no-repeat; }
+  @media (max-width: 900px) {
+    .outro {
+      margin-top: 0;
+      padding-top: 4.7rem;
+      background: none; } }
 
 .pricing {
   padding-bottom: 8rem; }
