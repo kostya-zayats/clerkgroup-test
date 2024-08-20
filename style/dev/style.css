@@ -754,6 +754,8 @@ input[type='text'] {
   border: 0.2rem solid #465b95; }
   .card-secondary h2, .card-secondary h3 {
     color: #fff; }
+  .card-secondary .card-header {
+    border-bottom: 0.1rem solid rgba(238, 238, 246, 0.1); }
 
 /* End Components */
 /* Containers */

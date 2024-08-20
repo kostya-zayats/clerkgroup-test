@@ -50,4 +50,8 @@
   h2, h3 {
     color: $text-color-white;
   }
+
+  .card-header {
+    border-bottom: .1rem solid $border-card-secondary-devider;
+  }
 }
