@@ -3,11 +3,20 @@
   background: url("../../img/bg/intro-bg.svg") left top 11% no-repeat;
   background-size: 100%;
   overflow: hidden;
+
+  @include mobile900 {
+    padding: 4rem 0 10.6rem;
+    background: none;
+  }
 }
 
 .intro-content {
   @include mainContent;
   display: flex;
+
+  @include mobile900 {
+    flex-direction: column-reverse;
+  }
 }
 
 .intro-desc {
@@ -15,8 +24,16 @@
   padding: 8rem 15rem 0 0;
   flex-shrink: 0;
 
+  @include mobile900 {
+    padding: 2.5rem 0 0;
+  }
+
   .btn-primary {
     margin-top: 2.5rem;
+
+    @include mobile900 {
+      margin-top: .3rem;
+    }
   }
 }
 
@@ -33,6 +50,21 @@
   border-radius: 3rem;
   box-shadow: $shadow-main;
   overflow: hidden;
+
+  @include mobile900 {
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+.intro-pic-main {
+
+  img {
+
+    @include mobile900 {
+      width: 100%;
+    }
+  }
 }
 
 .intro-pic-secondary {
@@ -40,4 +72,8 @@
   top: 50%;
   left: -6.9rem;
   transform: translate(0, -50%);
+
+  @include mobile900 {
+    display: none;
+  }
 }

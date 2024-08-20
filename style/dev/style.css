@@ -538,7 +538,8 @@ p {
   @media (max-width: 900px) {
     p {
       font-size: 1.6rem;
-      line-height: 2.2rem; } }
+      line-height: 2.2rem;
+      margin-bottom: 2.2rem; } }
 
 p.par--small {
   font-size: 1.6rem;
@@ -810,6 +811,10 @@ nav a {
   background: url("../../img/bg/intro-bg.svg") left top 11% no-repeat;
   background-size: 100%;
   overflow: hidden; }
+  @media (max-width: 900px) {
+    .intro {
+      padding: 4rem 0 10.6rem;
+      background: none; } }
 
 .intro-content {
   max-width: 122rem;
@@ -817,13 +822,22 @@ nav a {
   padding: 0 2rem;
   margin: 0 auto;
   display: flex; }
+  @media (max-width: 900px) {
+    .intro-content {
+      flex-direction: column-reverse; } }
 
 .intro-desc {
   max-width: 70rem;
   padding: 8rem 15rem 0 0;
   flex-shrink: 0; }
+  @media (max-width: 900px) {
+    .intro-desc {
+      padding: 2.5rem 0 0; } }
   .intro-desc .btn-primary {
     margin-top: 2.5rem; }
+    @media (max-width: 900px) {
+      .intro-desc .btn-primary {
+        margin-top: .3rem; } }
 
 .intro-pic {
   position: relative;
@@ -835,12 +849,23 @@ nav a {
   border-radius: 3rem;
   box-shadow: 0 1.8rem 5rem -1.5rem rgba(25, 42, 89, 0.2);
   overflow: hidden; }
+  @media (max-width: 900px) {
+    .intro-pic-main, .intro-pic-secondary {
+      border-radius: 0;
+      box-shadow: none; } }
+
+@media (max-width: 900px) {
+  .intro-pic-main img {
+    width: 100%; } }
 
 .intro-pic-secondary {
   position: absolute;
   top: 50%;
   left: -6.9rem;
   transform: translate(0, -50%); }
+  @media (max-width: 900px) {
+    .intro-pic-secondary {
+      display: none; } }
 
 .features {
   padding: 7.9rem 0 16rem;
