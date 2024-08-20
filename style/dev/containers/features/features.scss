@@ -1,5 +1,5 @@
 .features {
-  padding: 7.9rem 0 16rem;
+  padding: 7.9rem 0 12rem;
   text-align: center;
 
   @include mobile900 {
@@ -26,6 +26,7 @@
   margin: 8rem -1rem 0;
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
 
   @include mobile900 {
     margin: 4rem 0 0;
@@ -34,14 +35,18 @@
 }
 
 .features-unit {
-  padding: 0 1rem;
+  min-width: 33.333%;
+  width: 33.333%;
+  padding: 0 1rem 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-grow: 1;
+  flex-shrink: 0;
   flex-basis: 1rem;
 
   @include mobile900 {
+    min-width: 100%;
+    width: 100%;
     margin-bottom: 2rem;
     padding: 0;
     flex-direction: row;
