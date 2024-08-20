@@ -16,6 +16,13 @@ footer {
       display: none;
     }
   }
+
+  nav {
+
+    @include mobile900 {
+      display: none;
+    }
+  }
 }
 
 .footer-content {
@@ -25,12 +32,25 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include mobile900 {
+    padding: 3rem 0 5rem;
+  }
 }
 
 .footer-social {
+  display: flex;
 
   a {
+    display: block;
     margin-left: 2rem;
+
+    &:first-child {
+
+      @include mobile900 {
+        margin-left: 0;
+      }
+    }
 
     &:before, &:after {
       display: none;
@@ -38,6 +58,7 @@ footer {
   }
 
   svg {
+    display: block;
     width: 3.2rem;
     height: 3.2rem;
     fill: $text-color-light;

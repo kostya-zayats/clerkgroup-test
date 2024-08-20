@@ -1013,6 +1013,9 @@ footer {
       display: block; }
     footer .logo:before, footer .logo:after {
       display: none; }
+  @media (max-width: 900px) {
+    footer nav {
+      display: none; } }
 
 .footer-content {
   max-width: 122rem;
@@ -1024,21 +1027,31 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media (max-width: 900px) {
+    .footer-content {
+      padding: 3rem 0 5rem; } }
 
-.footer-social a {
-  margin-left: 2rem; }
-  .footer-social a:before, .footer-social a:after {
-    display: none; }
-.footer-social svg {
-  width: 3.2rem;
-  height: 3.2rem;
-  fill: #8794ba;
-  transition: fill 0.3s; }
-  @media (max-width: 1260px) {
-    .footer-social svg {
-      transition: none; } }
-  .footer-social svg:hover {
-    fill: #fff; }
+.footer-social {
+  display: flex; }
+  .footer-social a {
+    display: block;
+    margin-left: 2rem; }
+    @media (max-width: 900px) {
+      .footer-social a:first-child {
+        margin-left: 0; } }
+    .footer-social a:before, .footer-social a:after {
+      display: none; }
+  .footer-social svg {
+    display: block;
+    width: 3.2rem;
+    height: 3.2rem;
+    fill: #8794ba;
+    transition: fill 0.3s; }
+    @media (max-width: 1260px) {
+      .footer-social svg {
+        transition: none; } }
+    .footer-social svg:hover {
+      fill: #fff; }
 
 /* End Containers */
 
